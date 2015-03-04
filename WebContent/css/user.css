@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del,
+	dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol,
+	ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td,
+	article, aside, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: Microsoft Yahei, Arial, Helvetica, Verdana;
+	font-size: 14px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background-color: #1a1b23;
+	text-align: center;
+	position: relative;
+}
+
+.title {
+	color: #9fa2b8;
+	line-height: 50px;
+}
+
+.back {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 30px;
+}
+
+.buy-gold {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #5fc782;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.main {
+	position: relative;
+	width: 100%;
+}
+
+.help {
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	z-index: 10;
+	left: 10px;
+	top: -10px;
+	color: #9fa2b8;
+}
+
+.user-img {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.user-img img {
+	width: 120px;
+	border-radius: 50%;
+}
+
+.user-name {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #ccc;
+	margin-bottom: 20px;
+}
+
+.success, .details, .money {
+	text-align: center;
+	color: #5fc782;
+	padding: 2px;
+	font-size: 16px;
+}
+
+.props {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.props-title {
+	padding: 10px;
+	font-size: 16px;
+	color: #9fa2b8;
+}
+
+.prop {
+	margin-top: 20px;
+}
+
+.prop ul li {
+	display: block;
+	margin-bottom: 10px;
+	height: 60px;
+	position: relative;
+}
+
+.prop-img {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.prop-img img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.prop-info {
+	position: absolute;
+	left: 20%;
+	width: 55%;
+	height: 100%;
+}
+
+.info-top {
+	position: absolute;
+	top: 5px;
+	color: #ccc;
+}
+
+.info-top span {
+	
+}
+
+.info-bottom {
+	position: absolute;
+	bottom: 5px;
+	color: #bcbcbc;
+	font-size: 12px;
+}
+
+.prop-excharge {
+	position: absolute;
+	left: 75%;
+	width: 25%;
+	height: 100%;
+}
+
+.prop-excharge p {
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 15px;
+	color: #5fc782;
+	border: 1px solid #5fc782;
+	text-align: center;
+	border-radius: 15px;
+}
+
+/*===========弹出框部分 start===========*/
+.pop {
+	position: fixed;
+	z-index: 1111;
+	width: 300px;
+	height: 200px;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -150px;
+	overflow: hidden;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+.close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 1112;
+	width: 30px;
+	height: 30px;
+}
+
+.close img {
+	width: 100%;
+	display: block;
+}
+
+.pop-top {
+	margin-top: 20px;
+	width: 90%;
+	height: 120px;
+	margin-left: 5%;
+	position: relative;
+}
+
+.pop-left {
+	position: absolute;
+	left: 0;
+	width: 30%;
+}
+
+.pop-left img {
+	width: 100%;
+	display: block;
+}
+
+.pop-right {
+	position: absolute;
+	left: 35%;
+	width: 65%;
+	top: 0;
+}
+
+.pop-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	color: #5fc782;
+}
+
+.pop-intro {
+	font-size: 12px;
+	color: #bcbcbc;
+	margin-bottom: 10px;
+}
+
+.pop-num {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.charge-num {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 67px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.decrease {
+	position: absolute;
+	left: 67px;
+	width: 30px;
+	box-shadow: -1px 0px 0px 1px #ccc;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.decrease img {
+	display: block;
+	width: 100%;
+}
+
+.numbers {
+	position: absolute;
+	left: 97px;
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	transition: all 1s;
+	box-shadow: 0px 0px 0px 1px #ccc;
+	text-align: center;
+}
+
+.increase {
+	position: absolute;
+	left: 137px;
+	width: 30px;
+	box-shadow: 1px 0px 0px 1px #ccc;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.increase img {
+	display: block;
+	width: 100%;
+}
+
+.pop-gold {
+	color: #333;
+}
+
+.pop-gold span {
+	transition: all 1s;
+}
+
+.buy {
+	margin: 10px auto;
+	text-align: center;
+	width: 100px;
+	padding: 8px 30px;
+	background-color: #5fc782;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.pop-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1110;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/*===========弹出框部分 end===========*/

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache,must-revalidate">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name=viewport content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1, minimal-ui">
+<title>到底是谁</title>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/user.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<article class="title">个人主页</article>
+			<img class="back" onclick="self.location=document.referrer;" src="img/back.png">
+			<article class="buy-gold" onclick="buyGold();">买金币</article>
+		</header>
+		<section class="main">
+			<div class="help zoomInLeft animated" onclick="help()">帮助中心</div>
+			<div class="user-img rollIn animated"><img src="img/user.png"></div>
+			<div class="user-name zoomInUp animated">我就是彩笔</div>
+			<div class="success fadeInLeft animated">胜率: 50%</div>
+			<div class="details fadeInRight animated">成功: 5次 失败: 5次</div>
+			<div class="money fadeInLeft animated">余额: 1111541</div>
+			<section class="props">
+				<article class="props-title bounceInRight animated">我的道具</article>
+				<nav class="prop">
+					<ul>
+						<li class="fadeInLeft animated">
+							<div class="prop-img"><img src="img/prop_1.png"></div>
+							<div class="prop-info">
+								<div class="info-top">延时30秒X<span>5</span></div>
+								<div class="info-bottom">可将当前使用回合数延长30秒</div>
+							</div>
+							<div class="prop-excharge">
+								<p onclick="showPopCharge(1)">兑换</p>
+							</div>
+						</li>
+						<li class="fadeInRight animated">
+							<div class="prop-img"><img src="img/prop_2.png"></div>
+							<div class="prop-info">
+								<div class="info-top">查看字数X<span>9</span></div>
+								<div class="info-bottom">可以查看答案字数</div>
+							</div>
+							<div class="prop-excharge">
+								<p onclick="showPopCharge(2)">兑换</p>
+							</div>
+						</li>
+						<li class="fadeInLeft animated">
+							<div class="prop-img"><img src="img/prop_3.png"></div>
+							<div class="prop-info">
+								<div class="info-top">回合逆转X<span>3</span></div>
+								<div class="info-bottom">立即逆转提问及回答的回合</div>
+							</div>
+							<div class="prop-excharge">
+								<p onclick="showPopCharge(3)">兑换</p>
+							</div>
+						</li>
+						<li class="fadeInRight animated">
+							<div class="prop-img"><img src="img/prop_4.png"></div>
+							<div class="prop-info">
+								<div class="info-top">查看记录X<span>12</span></div>
+								<div class="info-bottom">可查看双方聊天记录10秒</div>
+							</div>
+							<div class="prop-excharge">
+								<p onclick="showPopCharge(4)">兑换</p>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</section>
+		<section class="pop animated" style="display: none;">
+			<div onclick="popColse()" class="close"><img src="img/close.png"></div>
+			<section class="pop-top">
+				<div class="pop-left"><img src="img/prop_1.png"></div>
+				<div class="pop-right">
+					<article class="pop-title">回合逆转</article>
+					<article class="pop-intro">立即逆转提问及回答的回合</article>
+					<div class="pop-num">
+						<div class="charge-num">购买数量: </div>
+						<div onclick="popDecrease()" class="decrease"><img src="img/decrease.png"></div>
+						<div class="numbers">1</div>
+						<div onclick="popIncrease()" class="increase"><img src="img/increase.png"></div>
+					</div>
+					<article class="pop-gold">消耗金币: <span>2</span> 金币</article>
+				</div>
+			</section>
+			<div onclick="popBuy()" class="buy">购买</div>
+			<input type="hidden" id="gold-price" value="2">
+		</section>
+		<section class="pop-bg" style="display: none;"></section>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/location.js"></script>
+	<script type="text/javascript" src="js/charge.js"></script>
+</body>
+</html>

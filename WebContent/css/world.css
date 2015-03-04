@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del,
+	dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol,
+	ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td,
+	article, aside, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: Microsoft Yahei, Arial, Helvetica, Verdana;
+	font-size: 14px;
+	background-color: #d976d9;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background-color: #1a1b23;
+	text-align: center;
+	position: relative;
+}
+
+.title {
+	color: #9fa2b8;
+	line-height: 50px;
+}
+
+.me {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 30px;
+}
+
+.create {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #5fc782;
+	width: 60px;
+	height: 50px;
+	-webkit-animation: tada 4s linear infinite 3s;
+	line-height: 50px;
+}
+
+.bg {
+	width: 100%;
+	display: block;
+}
+
+.buttom {
+	display: inline-block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.buttom ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.buttom ul li img {
+	width: 50%;
+}
+
+.word {
+	color: #fff;
+}
+
+.main {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	left: 0;
+}
+
+.rank-name {
+	width: 200px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.rank-name ul li {
+	display: table-cell;
+	padding: 10px;
+	width: 100px;
+	color: #5fc782;
+	background-color: #fff;
+}
+
+.left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.hover {
+	color: #fff !important;
+	background-color: #5fc782 !important;
+}
+
+.no-friend {
+	
+}
+
+.word-friend {
+	text-align: center;
+	padding: 20px;
+	color: #5fc782;
+}
+
+.has-friend {
+	
+}
+
+.has-friend ul li {
+	height: 50px;
+	margin-bottom: 20px;
+	display: block;
+	position: relative;
+	color: #fff;
+}
+
+.rank {
+	width: 10%;
+	left: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+}
+
+.user-img {
+	width: 15%;
+	height: 50px;
+	left: 10%;
+	position: absolute;
+}
+
+.user-img img {
+	height: 80%;
+	margin-top: 10%;
+}
+
+.user-info {
+	width: 55%;
+	height: 50px;
+	position: absolute;
+	left: 25%;
+}
+
+.info-top {
+	position: absolute;
+	top: 0;
+}
+
+.user-name {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.game-state {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.info-bottom {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+}
+
+.game-start {
+	width: 20%;
+	position: absolute;
+	height: 50px;
+	left: 80%;
+	font-size: 13px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+}
+
+.game-start  p {
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	background-color: #5fc782;
+	width: 90%;
+	border-radius: 5px;
+}
+
+.gameing {
+	color: #c75f7f !important;
+}

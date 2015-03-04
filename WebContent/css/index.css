@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del,
+	dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol,
+	ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td,
+	article, aside, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: Microsoft Yahei, Arial, Helvetica, Verdana;
+	font-size: 14px;
+	background-color: #d66ed7;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.load {
+	background-color: rgba(0, 0, 0, 0.77);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+
+.load img {
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	margin-left: -30px;
+}
+
+.load span {
+	position: absolute;
+	top: 50%;
+	height: 24px;
+	line-height: 24px;
+	margin-top: -12px;
+}
+.wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.bg {
+	width: 100%;
+}
+
+.top {
+	background-image: url(../img/index-user.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	left: 50%;
+	margin-left: -60px;
+	top: 160px;
+}
+
+.center {
+	background-image: url(../img/who.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	position: absolute;
+	width: 200px;
+	height: 66px;
+	left: 50%;
+	margin-left: -100px;
+	top: 300px;
+}
+
+.buttom {
+	position: fixed;
+	bottom: 10px;
+	display: inline-block;
+	max-width: 480px;
+	width: 100%;
+	height: 100px;
+}
+
+.buttom ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.buttom ul li img {
+	width: 50%;
+}
+
+.word {
+	color: #fff;
+}
+
+@media screen and (max-height:568px) {
+	.top {
+		background-image: url(../img/index-user.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		left: 50%;
+		margin-left: -60px;
+		top: 110px;
+	}
+	.center {
+		background-image: url(../img/who.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 200px;
+		height: 66px;
+		left: 50%;
+		margin-left: -100px;
+		top: 250px;
+	}
+}
+@media screen and (max-height:480px) {
+	.top {
+		background-image: url(../img/index-user.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		left: 50%;
+		margin-left: -60px;
+		top: 110px;
+	}
+	.center {
+		background-image: url(../img/who.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 200px;
+		height: 66px;
+		left: 50%;
+		margin-left: -100px;
+		top: 250px;
+	}
+}
+@media screen and (max-height:416px) {
+	.top {
+		background-image: url(../img/index-user.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		left: 50%;
+		margin-left: -60px;
+		top: 110px;
+	}
+	.center {
+		background-image: url(../img/who.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100%;
+		position: absolute;
+		width: 200px;
+		height: 66px;
+		left: 50%;
+		margin-left: -100px;
+		top: 250px;
+	}	
+}

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del,
+	dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol,
+	ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td,
+	article, aside, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: Microsoft Yahei, Arial, Helvetica, Verdana;
+	font-size: 14px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.wrapper {
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background-color: #1a1b23;
+	text-align: center;
+	position: relative;
+}
+.header img {
+	height: 30px;
+	position: absolute;
+	margin-top: 10px;
+	left: 10px;
+}
+.title {
+	color: #9fa2b8;
+	line-height: 50px;
+}
+.main {
+	
+}
+.main li {
+	height: 60px;
+	line-height: 60px;
+	width: 90%;
+	padding: 5%;
+	display: table;
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.gold-num {
+	width: 20%;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+}
+.gold-num span {
+	background-image: url(../img/charge-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: 60px;
+	line-height: 60px;
+	height: 60px;
+	display: block;
+}
+.gold {
+	width: 50%;
+	color: #999;
+	display: inline-block;
+}
+.rmb {
+	width: 30%;
+	color: #5fc782;
+	box-shadow: 0 0 1px 1px #5fc782;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 20px;
+	display: inline-block;
+}
